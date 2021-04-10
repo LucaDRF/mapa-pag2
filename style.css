@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: initial;
+    color: #FFFFFF;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* background: rgb(85, 174, 243); */
+    
+}
+.content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.content .mapa{
+    width: 70%;
+    height: 100%;
+}
+
+.content .container-fom{
+    display: flex;
+    flex: 1;
+    border-radius: 8px;
+    /* background: rgb(85, 174, 243); */
+    /* background: #269dbe6c; */
+    background: #269DBE;
+}
+.content-form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+.decription{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    text-align: start;
+ 
+}
+.decription p{
+    font-size: 14px;
+    color: rgba(255, 254, 254, 0.836);
+    margin-top: 20px;
+}
+
+form{
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+}
+
+form .group-input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+label{
+    width: 100%;
+    color: rgba(255, 254, 254, 0.836);
+    font-size: 14px;
+}
+form .group-input input, select, button{
+    width: 100%;
+    height: 45%;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.623);
+    background: #FFFFFF;
+}
+button{
+    /* background: #023652; */
+    /* color: #FFFFFF; */
+    cursor: pointer;
+}
+input::placeholder{
+    color: rgba(45, 45, 46, 0.336);
+}

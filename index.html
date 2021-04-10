@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            
+            <div class="container-fom">
+                <div class="content-form">
+                    <div class="decription">
+                        <h1>Escolha <br/> uma Escola <br/> no mapa</h1>
+                        <p>muitos alunos estão lhe esperando <br/> para aprender</p>
+                    </div>
+                    <form action="#">    
+                        <div class="group-input">
+                            <label for="curso">curso</label>
+                            <input placeholder="computação" id="curso" type="text">
+                        </div>
+                        <div class="group-input">
+                            <label for="turno">turno</label>
+                            <select name="turno" id="turno">
+                                <option value="manha">manha</option>
+                                <option value="tarde">tarde</option>
+                                <option value="noite">noite</option>
+                            </select>
+                        </div>
+                        <div class="group-input">
+                            <label for="horario">horario</label>
+                            <input placeholder="00:00" id="horario" type="text">
+                        </div>
+                        <button>Avançar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="mapa" id="map"></div>
+        </div>
+    </div>
+    <script src="./map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCT3V6U4hQCQXz9zbXOTpLaHjWzezu61kw&callback=initMap" async defer></script>
+</body>
+</html>
